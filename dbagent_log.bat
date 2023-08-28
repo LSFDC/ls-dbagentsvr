@@ -1,0 +1,1 @@
+ls_dbagent.exe -c ls_dbagent_log.ini
