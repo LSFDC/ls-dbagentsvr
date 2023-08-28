@@ -359,7 +359,6 @@ bool Manager::GetLocalIpAddressList2(ioHashStringVec& rvIPList) {
 		while (pUnicast) {
 			SOCKADDR_IN* pSockAddr = (SOCKADDR_IN*)pUnicast->Address.lpSockaddr;
 			if (pSockAddr->sin_family == AF_INET) {
-				char ipBuffer[INET_ADDRSTRLEN];
 				char szTemp[MAX_PATH] = "";
 				strcpy_s(szTemp, sizeof(szTemp), inet_ntoa(pSockAddr->sin_addr));
 				ioHashString sTemp = szTemp;
